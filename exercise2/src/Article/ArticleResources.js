@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export function getListResource({page = 1, size = 999, search, order}) {
+export function getListResource({page = 1, size = 999, search, order}={}) {
   return axios.get('/articles', {params: {
     _page: page,
     _limit: size,
