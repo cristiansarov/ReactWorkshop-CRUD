@@ -1,0 +1,30 @@
+.filter-control-input {
+  position: relative;
+  width: 300px;
+  input {
+    padding-right: 30px;
+  }
+  i {
+    color: #B5BCCE;
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    font-size: 16px;
+  }
+  button {
+    border: none;
+    background: none;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    right: 3px;
+    font-size: 16px;
+    color: #9b9fb2;
+    &:hover {
+      color: #b31111;
+    }
+  }
+}

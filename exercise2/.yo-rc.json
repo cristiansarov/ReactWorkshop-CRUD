@@ -1,0 +1,8 @@
+{
+  "generator-react-webpack": {
+    "appName": "kommunity",
+    "style": "scss",
+    "postcss": false,
+    "generatedWithVersion": 3
+  }
+}

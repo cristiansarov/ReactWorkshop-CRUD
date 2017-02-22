@@ -1,0 +1,17 @@
+.content-header {
+  display:flex;
+  align-items: flex-start;
+  &>*:first-child {
+    flex-grow: 1;
+    min-width: 1%;
+  }
+  &>*:last-child {
+    white-space: nowrap;
+  }
+  &>* .btn {
+    margin-right: 6px;
+  }
+  h3 {
+    margin: 0;
+  }
+}

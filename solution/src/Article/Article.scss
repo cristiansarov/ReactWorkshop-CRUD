@@ -1,0 +1,23 @@
+.article-list-screen {
+  .table {
+    th {
+      white-space: nowrap;
+    }
+    td {
+      white-space: nowrap;
+      &.title {
+        width: 200px
+      }
+      &.content {
+        width: 100%;
+        max-width: 1px;
+        p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
