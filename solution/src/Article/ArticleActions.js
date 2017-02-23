@@ -17,11 +17,7 @@ export function getItem(articleId) {
 export function deleteItem(articleId) {
   return {
     type: 'article/deleteItem',
-    payload: new Promise((resolve, reject)=>{
-      deleteItemResource(articleId).then(()=>{
-        resolve(articleId);
-      }, reject)
-    })
+    payload: deleteItemResource(articleId)
   }
 }
 

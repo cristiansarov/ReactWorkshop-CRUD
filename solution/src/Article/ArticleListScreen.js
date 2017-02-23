@@ -8,7 +8,6 @@ import {listenToLocation, setQueryParam} from 'core/utils/helpers'
 import classnames from 'classnames';
 
 
-
 @connect(state=>({
   list: state.article.list,
   totalPages: state.article.totalPages,
@@ -43,7 +42,6 @@ export default class ArticleListScreen extends React.Component {
           </div>
           <SearchInput />
         </div>
-
 
         <div>
           {list && (list.length ? (

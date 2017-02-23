@@ -14,7 +14,8 @@ import {Loader} from 'ContentComponents';
 })
 export default class ArticleListScreen extends React.Component {
   componentWillMount() {
-    this.getList();
+    const {getList} = this.props;
+    getList();
   }
   render() {
     const {list, loading} = this.props;
@@ -49,9 +50,5 @@ export default class ArticleListScreen extends React.Component {
 
       </div>
     )
-  }
-  getList() {
-    const {getList, location: {query}} = this.props;
-    getList(query);
   }
 }

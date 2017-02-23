@@ -12,7 +12,7 @@ import {getItem, resetItem} from './ArticleActions';
   getItem,
   resetItem
 })
-export default class ArticleListItem extends React.Component {
+export default class ArticleViewScreen extends React.Component {
   componentWillMount() {
     const {getItem, params: {articleId}} = this.props;
     getItem(articleId);

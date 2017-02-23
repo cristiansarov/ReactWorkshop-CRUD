@@ -15,10 +15,11 @@ import {Link} from 'react-router';
 })
 export default class ArticleListScreen extends React.Component {
   componentWillMount() {
-    this.getList();
+    const {getList} = this.props;
+    getList();
   }
   render() {
-    const {list, loading} = this.props;
+    const {list, loading, getList} = this.props;
     return (
       <div className="article-list-screen container">
 
@@ -39,7 +40,7 @@ export default class ArticleListScreen extends React.Component {
                 <th />
               </tr></thead>
               <tbody>
-              { list.map((article, k)=><ListItem key={k} article={article} k={k} getList={this.getList.bind(this)} />) }
+              { list.map((article, k)=><ListItem key={k} article={article} k={k} getList={getList} />) }
               </tbody>
             </table>
           ) : (
@@ -50,9 +51,5 @@ export default class ArticleListScreen extends React.Component {
 
       </div>
     )
-  }
-  getList() {
-    const {getList, location: {query}} = this.props;
-    getList(query);
   }
 }

@@ -77,28 +77,6 @@ export default function (state = initialState, action) {
     }
 
 
-    // DELETE ITEM
-    case 'article/deleteItem_loading': {
-      return {
-        ...state,
-        deleteLoading: true
-      };
-    }
-    case 'article/deleteItem_success': {
-      return {
-        ...state,
-        deleteLoading: false
-      };
-    }
-    case 'article/deleteItem_error': {
-      return {
-        ...state,
-        deleteLoading: false
-      };
-    }
-
-
-
     // RESET ITEM
     case 'article/resetItem': {
       return {
