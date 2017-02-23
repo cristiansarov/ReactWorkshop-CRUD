@@ -17,7 +17,7 @@ Before adding the pagination component, add dummy articles until you reach more 
 Then go to the `ArticleResources.js` and change the default size on `getListResource` function from 999 to 5.
 
 ```js
-export function getListResource({page = 1, size = 999, search, order}={}) {
+export function getListResource({page = 1, size = 5, search, order}={}) {
 ...
 }
 ```
