@@ -24,7 +24,7 @@ export default class ArticleListScreen extends React.Component {
   }
   render() {
     const {list, loading, totalPages, location: {query}} = this.props;
-    const filterButtons = ['ASC', 'DESC'];
+    const orderButtons = ['ASC', 'DESC'];
     return (
       <div className="article-list-screen container">
 
@@ -35,7 +35,7 @@ export default class ArticleListScreen extends React.Component {
         <div className="content-header">
           <h3>Article List</h3>
           <div>
-            {filterButtons.map(item=>(
+            {orderButtons.map(item=>(
               <button key={item} className={classnames('btn btn-sm btn-default', {'btn-primary': query.order==item})}
                       onClick={()=>{setQueryParam('order', query.order == item ? null : item)}}>{item}</button>
             ))}
