@@ -4,7 +4,7 @@ In this exercise we will create the pagination for our article list, add a searc
 
 It should look like this:
 
-[<img src="screenshot.jpg" width="300" height="100" />](screenshot-view.jpg)
+[<img src="screenshot.jpg" width="300" height="100" />](screenshot.jpg)
 
 ## Instructions
 
