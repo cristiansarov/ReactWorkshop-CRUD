@@ -16,10 +16,13 @@ export default class AppComponent extends Component {
     return (
       <Provider store={store}>
         <div>
-          <Router history={history} routes={routes} />
+          <Router history={history} routes={routes} createElement={this.createElement}  />
           <ReduxToastr timeOut={3000} />
         </div>
       </Provider>
     );
+  }
+  createElement(component, props) { // fix for not re-rendering component routes with same component)
+    return React.createElement(component, { ...props, key: props.location.pathname });
   }
 }

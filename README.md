@@ -77,6 +77,8 @@ To stop the dev server and go to the next exercise just press `CTRL+C` and follo
 
 ## Exercise Instructions
 
+The exercises are created at the beginning step-by-step, and as you learn, the code will be replace with instructions.
+
 * [Exercise 1 instructions](exercise1/docs/Instructions.md)
 * [Exercise 2 instructions](exercise2/docs/Instructions.md)
 * [Exercise 3 instructions](exercise3/docs/Instructions.md)
